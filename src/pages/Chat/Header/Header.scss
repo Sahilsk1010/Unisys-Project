@@ -1,0 +1,48 @@
+.header {
+    height: 80px; /* Adjust the height as needed */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 5%;
+    background-color: var(--setup-background);
+    border-bottom: var(--light-border);
+    transition: 0.2s;
+}
+
+
+.header-title {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    background: var(--gemini-font-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Apply Gemini font color to the header title */
+}
+
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-buttons .github-icon,
+.header-buttons .clear-icon {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        .header-buttons {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        span {
+            display: none;
+        }
+    }
+}
